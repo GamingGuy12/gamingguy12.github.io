@@ -119,10 +119,66 @@
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="logIn">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Log into your Account</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Log In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signUp"
+                            data-bs-dismiss="modal" style="text-decoration: none;">Sign Up Now</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signUp">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Create an Account</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="email_sigup">Email Address</label>
+                            <input type="email" class="form-control" id="email_sigup" placeholder="Email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password_signup">Password</label>
+                            <input type="password" class="form-control" id="password_signup" placeholder="Password"
+                                required>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Sign Up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#logIn"
+                            data-bs-dismiss="modal" style="text-decoration: none;">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="hero-section text-center">
         <div class="container">
-            <h1 class="display-3 custom-font">SURVIVAL BLOG</h1>
-            <p class="lead mono-font text-uppercase">Field notes from some of the most seasoned veterans.</p>
+            <h1 class="display-3 custom-font">LIABILITY WAVER</h1>
+            <p class="lead mono-font text-uppercase">Terms & conditions of venturing with us.</p>
         </div>
     </header>
 
