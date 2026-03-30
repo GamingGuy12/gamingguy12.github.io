@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Survival Blog | Roamers, Venture & Co.</title>
+    <title>About & Contact | Roamers, Venture & Co.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,12 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=DM+Sans:wght@400;700&family=Inconsolata:wght@300;600&display=swap"
         rel="stylesheet">
     <style>
-        .blog-header {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80');
-            background-size: cover;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
+        body {
+            font-family: "DM Sans", sans-serif;
+            background-color: #f4f4f4;
+            color: #212020;
         }
 
         .custom-font {
@@ -37,33 +35,96 @@
             padding: 80px 0;
         }
 
-
-        body,
-        html {
-            height: 100%;
-            font-family: "DM Sans";
-        }
-
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
-        }
-
-        .related-img {
-            filter: brightness(40%) contrast(110%);
-            height: 350px;
+        .team-img {
+            filter: brightness(60%) contrast(120%) grayscale(20%);
+            transition: 0.4s;
+            height: 300px;
             object-fit: cover;
-            transition: 0.3s;
         }
 
-        .card:hover .related-img {
-            filter: brightness(50%) contrast(120%);
+        .card:hover .team-img {
+            filter: brightness(90%) contrast(100%) grayscale(0%);
+        }
+
+        .contact-box {
+            background-color: #212020;
+            color: #dfc0a4;
+            padding: 40px;
+            border-radius: 5px;
+        }
+
+        .contact-box {
+            background-color: #212020;
+            color: #dfc0a4;
+            padding: 40px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .bg-dark-form {
+            background-color: #1a1a1a;
+            padding: 48px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .form-control {
+            background-color: #2e2d2d;
+            border: 1px solid #444;
+            color: white !important;
+        }
+
+        .form-control::placeholder {
+            color: #b0b0b0;
+            opacity: 1;
+        }
+
+        .bg-dark-form {
+            background-color: #1a1a1a !important;
+            padding: 48px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .form-control:focus {
+            background-color: #3d3c3c;
+            border-color: #dfc0a4;
+            color: white;
+            box-shadow: none;
+            outline: 0;
+        }
+
+        .btn-outline-light:hover {
+            background-color: #dfc0a4;
+            color: #212020;
+            border-color: #dfc0a4;
+        }
+
+        .bg-dark-form .form-control {
+            background-color: #2e2d2d;
+            border: 1px solid #444;
+            color: white !important;
+        }
+
+        .bg-dark-form .form-control:focus {
+            background-color: #3d3c3c;
+            border-color: #dfc0a4;
+            color: white;
+            box-shadow: none;
+            outline: 0;
+        }
+
+        .modal .form-control {
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            color: #212529 !important;
         }
     </style>
+</head>
 
 <body style="background-color: #f4f4f4;">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212020">
@@ -150,240 +211,56 @@
 
     <header class="hero-section text-center">
         <div class="container">
-            <h1 class="display-3 custom-font">SURVIVAL BLOG</h1>
-            <p class="lead mono-font text-uppercase">Field notes from some of the most seasoned veterans.</p>
+            <h1 class="display-3 custom-font">ABOUT US</h1>
+            <p class="lead mono-font text-uppercase">What & why we do this.</p>
         </div>
     </header>
-
-    <div class="container my-5">
-        <div class="row g-4">
-            <div class="col-md-8">
-                <div class="card mb-4 border-0 shadow-sm">
-                    <img src="https://media.telanganatoday.com/wp-content/uploads/2025/02/polar-vortex-scaled.jpg"
-                        class="card-img-top" alt="Ice">
-                    <div class="card-body">
-                        <span class="badge bg-danger mb-2">EXTREME COLD</span>
-                        <h2 class="card-title">How to Outlast a Polar Vortex</h2>
-                        <p class="card-text">When the temperature drops below -40°C, your gear isn't just a choice—it's
-                            your life support system. Learn about multi-stage thermal layering...</p>
-                        <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#myModal0">Read Full
-                            Report</button>
-                    </div>
-                </div>
+    <div class="container my-5 py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="custom-font mb-4">The Roamers' Legacy</h2>
+                <p>Founded in 2020, Roamers, Venture & Co. is dedicated to the thrilling side of travelling, especially
+                    travelling in dangerous places. For those daring adventureres, we provide logistical support, the
+                    essential gear and survival experience with our seasoned guides.</p>
             </div>
-            <div class="col-md-4">
-                <div class="p-4 bg-dark text-white rounded">
-                    <h4>Top Gear Picks</h4>
-                    <ul class="list-unstyled">
-                        <li class="border-bottom py-2">Satellite Transponders</li>
-                        <li class="border-bottom py-2">Desalination Kits</li>
-                        <li class="py-2">Anti-Venom Kits</li>
-                    </ul>
-                </div>
+            <div class="col-md-6">
+                <img src="https://www.tripplannersindia.com/assets/blog/images/goaadventure/rock_climbing.webp"
+                    class="img-fluid rounded shadow-lg" style="filter: contrast(110%) brightness(90%);" alt="Explorer">
             </div>
         </div>
     </div>
 
-    <section class="shadow-sm" style="background: #e9e9e9;">
-        <div class="container py-5" id="portfolio">
-            <h3 class="text-center text-uppercase custom-font">Essential Intelligence</h3>
-            <p class="text-center mb-5"><em>Further reading for the modern roamer.</em></p>
-
-            <div class="row g-4">
-                <div class="col-md-3 col-sm-6">
-                    <div class="card border-0 shadow-sm overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=800&q=80"
-                            class="card-img-top related-img" alt="Desert">
-                        <div class="card-img-overlay text-white d-flex flex-column">
-                            <span class="badge bg-warning text-dark mb-2 w-50">ARID ZONE</span>
-                            <h4 class="card-title">Hydration in the Danakil</h4>
-                            <p class="card-text small">Managing 10 liters of water a day in 50°C heat.</p>
-                            <button class="btn btn-sm btn-outline-light mt-auto" data-bs-toggle="modal"
-                                data-bs-target="#myModal4">Read Intel</button>
-                        </div>
+    <div class="container my-5 py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row g-0 shadow-lg" style="border-radius: 10px; overflow: hidden;">
+                    <div class="col-md-5 contact-box d-flex flex-column justify-content-center">
+                        <h3 class="custom-font">SATELLITE UPLINK</h3>
+                        <p class="mono-font small">Send us your inquiry.</p>
+                        <hr style="border-color: #dfc0a4; opacity: 0.5;">
+                        <p class="mb-1 mono-font"><strong>HQ:</strong> 42.3601° N, 71.0589° W</p>
+                        <p class="mb-1 mono-font"><strong>Signal:</strong> 144.390 MHz</p>
+                        <p class="mono-font"><strong>Email:</strong> intel@roamersventure.co</p>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card border-0 shadow-sm overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
-                            class="card-img-top related-img" alt="Mountain">
-                        <div class="card-img-overlay text-white d-flex flex-column">
-                            <span class="badge bg-primary mb-2 w-50">ALTITUDE</span>
-                            <h4 class="card-title">The Thin Air Protocol</h4>
-                            <p class="card-text small">Acclimatization techniques for peaks above 6,000m.</p>
-                            <button class="btn btn-sm btn-outline-light mt-auto" data-bs-toggle="modal"
-                                data-bs-target="#myModal3">Read Intel</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card border-0 shadow-sm overflow-hidden">
-                        <img src="https://tse2.mm.bing.net/th/id/OIP.mes7_-HlD8Xh-UPa4YfgrwHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
-                            class="card-img-top related-img" alt="Snake">
-                        <div class="card-img-overlay text-white d-flex flex-column">
-                            <span class="badge bg-success mb-2 w-50">WILDLIFE</span>
-                            <h4 class="card-title">Venom Identification</h4>
-                            <p class="card-text small">Recognizing the Golden Lancehead and other threats.</p>
-                            <button class="btn btn-sm btn-outline-light mt-auto" data-bs-toggle="modal"
-                                data-bs-target="#myModal2">Read Intel</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="card border-0 shadow-sm overflow-hidden">
-                        <img src="https://www.rei.com/blog/wp-content/uploads/2018/05/Hawaii-Volcanoes-National-Park_1.jpg"
-                            class="card-img-top related-img" alt="Lava">
-                        <div class="card-img-overlay text-white d-flex flex-column">
-                            <span class="badge bg-danger mb-2 w-50">VOLCANIC</span>
-                            <h4 class="card-title">Gas Mask Maintenance</h4>
-                            <p class="card-text small">Ensuring your filters handle sulfur dioxide levels.</p>
-                            <button class="btn btn-sm btn-outline-light mt-auto" data-bs-toggle="modal"
-                                data-bs-target="#myModal">Read Intel</button>
-                        </div>
+                    <div class="col-md-7 bg-dark-form">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control p-3 mono-font" placeholder="Full Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control p-3 mono-font" placeholder="Email Address">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control p-3 mono-font" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <button class="btn btn-outline-light w-100 py-3 text-uppercase fw-bold mono-font"
+                                style="letter-spacing: 2px;">Transmit Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Volcanic Air Filtration</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h5>Understanding Sulfur Dioxide</h5>
-                        <p>In volcanic zones, the primary threat isn't just ash, but toxic gases. Sulfur dioxide
-                            ($SO_2$) can burn the lining of your lungs in seconds. Standard N95 masks are useless here.
-                        </p>
-                        <h5>Filter Ratings</h5>
-                        <p>Ensure your cartridges are rated for acid gases (usually color-coded yellow or olive). Check
-                            the seal integrity every morning by performing a "negative pressure test"—cover the filters
-                            with your palms and inhale; the mask should collapse slightly against your face.</p>
-                        <h5>Moisture Control</h5>
-                        <p>Condensation inside the mask can lead to bacterial growth. Always carry spare valves and dry
-                            the interior with a microfiber cloth after every 4 hours of use.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="myModal2">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Venom Identification & Response</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h5>The Golden Lancehead</h5>
-                        <p>Endemic to Snake Island, this pit viper possesses a hemotoxic venom that can cause localized
-                            necrosis and systemic hemorrhaging. Identification is key: look for the distinct triangular
-                            head and heat-sensing pits.</p>
-                        <h5>Immediate First Aid</h5>
-                        <p>Forget the movies. Do not cut the wound and do not suck out the venom. Keep the bitten limb
-                            below heart level and remain as still as possible to slow your heart rate. Immobility is
-                            your best friend until extraction arrives.</p>
-                        <h5>The Pressure-Immobilization Technique</h5>
-                        <p>For neurotoxic bites (like Cobras), use a broad pressure bandage over the entire limb. It
-                            should be as tight as a bandage for a sprained ankle, but not tight enough to stop blood
-                            flow to the fingers or toes.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="myModal3">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">The Thin Air Protocol</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h5>The Golden Rule: Climb High, Sleep Low</h5>
-                        <p>When operating above 3,000 meters, your body requires time to produce more red blood cells.
-                            Always establish your base camp at a lower elevation than your peak daily activity.</p>
-                        <h5>Identifying HAPE and HACE</h5>
-                        <p>High Altitude Pulmonary Edema (HAPE) and Cerebral Edema (HACE) are lethal. If you experience
-                            extreme shortness of breath while resting, or a loss of coordination (ataxia), you must
-                            descend immediately. Descent is the only cure.</p>
-                        <h5>Hydration & Nutrition</h5>
-                        <p>At high altitudes, you lose water through respiration twice as fast as at sea level. Force
-                            yourself to drink 4-5 liters of water daily, and prioritize carbohydrates as they require
-                            less oxygen for metabolism than fats or proteins.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="myModal4">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Hydration in the Danakil</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h5>Calculating Sweat Loss</h5>
-                        <p>In 50°C heat, you can lose up to 1.5 liters of fluid per hour. If you wait until you are
-                            thirsty, you are already 2% dehydrated, which reduces cognitive function by 20%.</p>
-                        <h5>Electrolyte Balance</h5>
-                        <p>Drinking plain water in extreme heat can lead to hyponatremia (salt depletion). You must
-                            supplement with salt tablets or electrolyte powders to maintain the electrical conductivity
-                            of your nervous system.</p>
-                        <h5>Urine Color Index</h5>
-                        <p>Monitor your output. Anything darker than "straw" color is a red flag. If you stop urinating
-                            entirely, you are entering stage 1 heat stroke and must seek shade and cooling immediately.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="myModal0">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Polar Vortex Survival Guide</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h5>Multi-Stage Layering</h5>
-                        <p>The secret is air. Your clothes don't warm you; they trap the heat your body produces. Start
-                            with a wicking base layer (merino wool), add an insulating mid-layer (down or fleece), and
-                            finish with a windproof/waterproof shell.</p>
-                        <h5>The Danger of Sweating</h5>
-                        <p>In -40°C, sweat is a death sentence. If you feel yourself getting too warm while moving, vent
-                            your jacket immediately. Moisture against the skin will pull heat away from your core 25
-                            times faster than dry air.</p>
-                        <h5>Frostbite Prevention</h5>
-                        <p>Check your companions for "frostnip"—white, waxy patches on the nose or cheeks. If skin feels
-                            hard to the touch, do not rub it (this causes tissue damage). Warm the area slowly using
-                            body heat from a warm hand.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    </div>
     <div class="mt-5">
         <div class="container mt-3">
             <ul class="pagination justify-content-center">
@@ -396,7 +273,6 @@
             </ul>
         </div>
     </div>
-
     <div class="mt-5 pt-4">
         <footer class="text-white text-center text-lg-start" style="background-color: #212020">
             <div class="container p-4">
@@ -428,7 +304,6 @@
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>
