@@ -1,309 +1,309 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <title>About & Contact | Roamers, Venture & Co.</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=DM+Sans:wght@400;700&family=Inconsolata:wght@300;600&display=swap"
-        rel="stylesheet">
-    <style>
-        body {
-            font-family: "DM Sans", sans-serif;
-            background-color: #f4f4f4;
-            color: #212020;
-        }
+    <head>
+        <title>About & Contact | Roamers, Venture & Co.</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=DM+Sans:wght@400;700&family=Inconsolata:wght@300;600&display=swap"
+            rel="stylesheet">
+        <style>
+            body {
+                font-family: "DM Sans", sans-serif;
+                background-color: #f4f4f4;
+                color: #212020;
+            }
 
-        .custom-font {
-            font-family: "Arbutus Slab" !important;
-        }
+            .custom-font {
+                font-family: "Arbutus Slab" !important;
+            }
 
-        .mono-font {
-            font-family: "Inconsolata", monospace;
-        }
+            .mono-font {
+                font-family: "Inconsolata", monospace;
+            }
 
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 80px 0;
-        }
+            .hero-section {
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80');
+                background-size: cover;
+                background-position: center;
+                color: white;
+                padding: 80px 0;
+            }
 
-        .team-img {
-            filter: brightness(60%) contrast(120%) grayscale(20%);
-            transition: 0.4s;
-            height: 300px;
-            object-fit: cover;
-        }
+            .team-img {
+                filter: brightness(60%) contrast(120%) grayscale(20%);
+                transition: 0.4s;
+                height: 300px;
+                object-fit: cover;
+            }
 
-        .card:hover .team-img {
-            filter: brightness(90%) contrast(100%) grayscale(0%);
-        }
+            .card:hover .team-img {
+                filter: brightness(90%) contrast(100%) grayscale(0%);
+            }
 
-        .contact-box {
-            background-color: #212020;
-            color: #dfc0a4;
-            padding: 40px;
-            border-radius: 5px;
-        }
+            .contact-box {
+                background-color: #212020;
+                color: #dfc0a4;
+                padding: 40px;
+                border-radius: 5px;
+            }
 
-        .contact-box {
-            background-color: #212020;
-            color: #dfc0a4;
-            padding: 40px;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 0px;
-        }
+            .contact-box {
+                background-color: #212020;
+                color: #dfc0a4;
+                padding: 40px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
 
-        .bg-dark-form {
-            background-color: #1a1a1a;
-            padding: 48px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 0px;
-        }
+            .bg-dark-form {
+                background-color: #1a1a1a;
+                padding: 48px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
 
-        .form-control {
-            background-color: #2e2d2d;
-            border: 1px solid #444;
-            color: white !important;
-        }
+            .form-control {
+                background-color: #2e2d2d;
+                border: 1px solid #444;
+                color: white !important;
+            }
 
-        .form-control::placeholder {
-            color: #b0b0b0;
-            opacity: 1;
-        }
+            .form-control::placeholder {
+                color: #b0b0b0;
+                opacity: 1;
+            }
 
-        .bg-dark-form {
-            background-color: #1a1a1a !important;
-            padding: 48px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
+            .bg-dark-form {
+                background-color: #1a1a1a !important;
+                padding: 48px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
 
-        .form-control:focus {
-            background-color: #3d3c3c;
-            border-color: #dfc0a4;
-            color: white;
-            box-shadow: none;
-            outline: 0;
-        }
+            .form-control:focus {
+                background-color: #3d3c3c;
+                border-color: #dfc0a4;
+                color: white;
+                box-shadow: none;
+                outline: 0;
+            }
 
-        .btn-outline-light:hover {
-            background-color: #dfc0a4;
-            color: #212020;
-            border-color: #dfc0a4;
-        }
+            .btn-outline-light:hover {
+                background-color: #dfc0a4;
+                color: #212020;
+                border-color: #dfc0a4;
+            }
 
-        .bg-dark-form .form-control {
-            background-color: #2e2d2d;
-            border: 1px solid #444;
-            color: white !important;
-        }
+            .bg-dark-form .form-control {
+                background-color: #2e2d2d;
+                border: 1px solid #444;
+                color: white !important;
+            }
 
-        .bg-dark-form .form-control:focus {
-            background-color: #3d3c3c;
-            border-color: #dfc0a4;
-            color: white;
-            box-shadow: none;
-            outline: 0;
-        }
+            .bg-dark-form .form-control:focus {
+                background-color: #3d3c3c;
+                border-color: #dfc0a4;
+                color: white;
+                box-shadow: none;
+                outline: 0;
+            }
 
-        .modal .form-control {
-            background-color: #fff;
-            border: 1px solid #ced4da;
-            color: #212529 !important;
-        }
-    </style>
-</head>
+            .modal .form-control {
+                background-color: #fff;
+                border: 1px solid #ced4da;
+                color: #212529 !important;
+            }
+        </style>
+    </head>
 
-<body style="background-color: #f4f4f4;">
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212020">
-        <div class="container">
-            <a class="navbar-brand fs-3 custom-font" style="color: #dfc0a4;" href="index.html">
-                <img src="travelllogo.png" alt="Logo" style="width:60px; margin-right: 15px;" class="rounded-pill">
-                Roamers, Venture & Co.
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto me-auto">
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="liabilitywaver.html">Liability Waver</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="survivalblog.html">Survival Blog</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="aboutncontact.html">About & Contact</a></li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link px-3" href="#" data-bs-toggle="modal"
-                            data-bs-target="#logIn">Login</a></li>
-                    <li class="nav-item ms-2"><a class="nav-link px-4" href="#" data-bs-toggle="modal"
-                            data-bs-target="#signUp">Sign up</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="modal fade" id="logIn">
-        <div class="modal-dialog modal-md modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Log into your Account</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="email">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password" required>
-                        </div>
-                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Log In</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signUp"
-                            data-bs-dismiss="modal" style="text-decoration: none;">Sign Up Now</a></p>
+    <body style="background-color: #f4f4f4;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212020">
+            <div class="container">
+                <a class="navbar-brand fs-3 custom-font" style="color: #dfc0a4;" href="index.html">
+                    <img src="travelllogo.png" alt="Logo" style="width:60px; margin-right: 15px;" class="rounded-pill">
+                    Roamers, Venture & Co.
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-auto">
+                        <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="liabilitywaver.html">Liability Waver</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="survivalblog.html">Survival Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="aboutncontact.html">About & Contact</a></li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link px-3" href="#" data-bs-toggle="modal"
+                                data-bs-target="#logIn">Login</a></li>
+                        <li class="nav-item ms-2"><a class="nav-link px-4" href="#" data-bs-toggle="modal"
+                                data-bs-target="#signUp">Sign up</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="signUp">
-        <div class="modal-dialog modal-md modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Create an Account</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="email_sigup">Email Address</label>
-                            <input type="email" class="form-control" id="email_sigup" placeholder="Email" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="password_signup">Password</label>
-                            <input type="password" class="form-control" id="password_signup" placeholder="Password"
-                                required>
-                        </div>
-                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Sign Up</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#logIn"
-                            data-bs-dismiss="modal" style="text-decoration: none;">Login</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <header class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-3 custom-font">ABOUT US</h1>
-            <p class="lead mono-font text-uppercase">What & why we do this.</p>
-        </div>
-    </header>
-    <div class="container my-5 py-5">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2 class="custom-font mb-4">The Roamers' Legacy</h2>
-                <p>Founded in 2020, Roamers, Venture & Co. is dedicated to the thrilling side of travelling, especially
-                    travelling in dangerous places. For those daring adventureres, we provide logistical support, the
-                    essential gear and survival experience with our seasoned guides.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://www.tripplannersindia.com/assets/blog/images/goaadventure/rock_climbing.webp"
-                    class="img-fluid rounded shadow-lg" style="filter: contrast(110%) brightness(90%);" alt="Explorer">
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-5 py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="row g-0 shadow-lg" style="border-radius: 10px; overflow: hidden;">
-                    <div class="col-md-5 contact-box d-flex flex-column justify-content-center">
-                        <h3 class="custom-font">SATELLITE UPLINK</h3>
-                        <p class="mono-font small">Send us your inquiry.</p>
-                        <hr style="border-color: #dfc0a4; opacity: 0.5;">
-                        <p class="mb-1 mono-font"><strong>HQ:</strong> 42.3601° N, 71.0589° W</p>
-                        <p class="mb-1 mono-font"><strong>Signal:</strong> 144.390 MHz</p>
-                        <p class="mono-font"><strong>Email:</strong> intel@roamersventure.co</p>
+        </nav>
+        <div class="modal fade" id="logIn">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Log into your Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-                    <div class="col-md-7 bg-dark-form">
+                    <div class="modal-body">
                         <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control p-3 mono-font" placeholder="Full Name">
+                            <div class="form-group mb-3">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
                             </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control p-3 mono-font" placeholder="Email Address">
+                            <div class="form-group mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password" required>
                             </div>
-                            <div class="mb-3">
-                                <textarea class="form-control p-3 mono-font" rows="4" placeholder="Message"></textarea>
-                            </div>
-                            <button class="btn btn-outline-light w-100 py-3 text-uppercase fw-bold mono-font"
-                                style="letter-spacing: 2px;">Transmit Message</button>
+                            <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Log In</button>
                         </form>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="mt-5">
-        <div class="container mt-3">
-            <ul class="pagination justify-content-center">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="index.html">Home</a></li>
-                <li class="page-item"><a class="page-link" href="survivalblog.html">Survival Blog</a></li>
-                <li class="page-item"><a class="page-link" href="liabilitywaver.html">Liability Waver</a></li>
-                <li class="page-item"><a class="page-link" href="aboutncontact.html">About & Contact</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="mt-5 pt-4">
-        <footer class="text-white text-center text-lg-start" style="background-color: #212020">
-            <div class="container p-4">
-                <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <h5>Roamers, Venture & Co.</h5>
-                        <p>Exploring the extremes of the physical world since 2020. Travel at your own risk.</p>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <h5>Legal</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Liability Waiver</a></li>
-                            <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Privacy Policy</a></li>
-                            <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Terms of Risk</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <h5>Contact</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Satellite Uplink</a></li>
-                            <li><a href="#" style="color: #9b9a9a; text-decoration: none;">HQ Coordinates</a></li>
-                            <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Emergency Signal</a></li>
-                        </ul>
+                    <div class="modal-footer">
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signUp"
+                                data-bs-dismiss="modal" style="text-decoration: none;">Sign Up Now</a></p>
                     </div>
                 </div>
             </div>
-            <div class="text-center p-3" style="background-color: #2e2d2d;">
-                © 2026 Roamers, Venture & Co. | All Rights Reserved
-            </div>
-        </footer>
-    </div>
-</body>
+        </div>
 
-</html>
+        <div class="modal fade" id="signUp">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create an Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="email_sigup">Email Address</label>
+                                <input type="email" class="form-control" id="email_sigup" placeholder="Email" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password_signup">Password</label>
+                                <input type="password" class="form-control" id="password_signup" placeholder="Password"
+                                    required>
+                            </div>
+                            <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#logIn"
+                                data-bs-dismiss="modal" style="text-decoration: none;">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="hero-section text-center">
+            <div class="container">
+                <h1 class="display-3 custom-font">ABOUT US</h1>
+                <p class="lead mono-font text-uppercase">What & why we do this.</p>
+            </div>
+        </header>
+        <div class="container my-5 py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="custom-font mb-4">The Roamers' Legacy</h2>
+                    <p>Founded in 2020, Roamers, Venture & Co. is dedicated to the thrilling side of travelling, especially
+                        travelling in dangerous places. For those daring adventureres, we provide logistical support, the
+                        essential gear and survival experience with our seasoned guides.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://www.tripplannersindia.com/assets/blog/images/goaadventure/rock_climbing.webp"
+                        class="img-fluid rounded shadow-lg" style="filter: contrast(110%) brightness(90%);" alt="Explorer">
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row g-0 shadow-lg" style="border-radius: 10px; overflow: hidden;">
+                        <div class="col-md-5 contact-box d-flex flex-column justify-content-center">
+                            <h3 class="custom-font">SATELLITE UPLINK</h3>
+                            <p class="mono-font small">Send us your inquiry.</p>
+                            <hr style="border-color: #dfc0a4; opacity: 0.5;">
+                            <p class="mb-1 mono-font"><strong>HQ:</strong> 42.3601° N, 71.0589° W</p>
+                            <p class="mb-1 mono-font"><strong>Signal:</strong> 144.390 MHz</p>
+                            <p class="mono-font"><strong>Email:</strong> intel@roamersventure.co</p>
+                        </div>
+                        <div class="col-md-7 bg-dark-form">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control p-3 mono-font" placeholder="Full Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control p-3 mono-font" placeholder="Email Address">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control p-3 mono-font" rows="4" placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn btn-outline-light w-100 py-3 text-uppercase fw-bold mono-font"
+                                    style="letter-spacing: 2px;">Transmit Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div class="container mt-3">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="index.html">Home</a></li>
+                    <li class="page-item"><a class="page-link" href="survivalblog.html">Survival Blog</a></li>
+                    <li class="page-item"><a class="page-link" href="liabilitywaver.html">Liability Waver</a></li>
+                    <li class="page-item"><a class="page-link" href="aboutncontact.html">About & Contact</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-5 pt-4">
+            <footer class="text-white text-center text-lg-start" style="background-color: #212020">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h5>Roamers, Venture & Co.</h5>
+                            <p>Exploring the extremes of the physical world since 2020. Travel at your own risk.</p>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <h5>Legal</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Liability Waiver</a></li>
+                                <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Privacy Policy</a></li>
+                                <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Terms of Risk</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <h5>Contact</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Satellite Uplink</a></li>
+                                <li><a href="#" style="color: #9b9a9a; text-decoration: none;">HQ Coordinates</a></li>
+                                <li><a href="#" style="color: #9b9a9a; text-decoration: none;">Emergency Signal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: #2e2d2d;">
+                    © 2026 Roamers, Venture & Co. | All Rights Reserved
+                </div>
+            </footer>
+        </div>
+    </body>
+
+    </html>
