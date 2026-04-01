@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home | Roamers, Venture & Co.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .custom-font {
+            font-family: "Arbutus Slab" !important;
+        }
+
+        .mono-font {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: "DM Sans";
+        }
+
+        .bg-signup-full {
+            background-color: #1a1a1a;
+            width: 100%;
+            padding: 100px 0;
+        }
+
+        .bg-signup-full .form-control,
+        .bg-signup-full .form-select {
+            background-color: #2a2a2a !important;
+            border: 1px solid #3d3d3d;
+            color: #e0e0e0 !important;
+            border-radius: 4px;
+            padding: 15px;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .risk-high {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .risk-med {
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        .env-data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .env-stat {
+            background: #e9ecef;
+            padding: 8px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.75rem;
+            border: 1px solid #dee2e6;
+        }
+
+        .location-nav .nav-link {
+            color: #212020;
+            border: 1px solid #dee2e6;
+            margin-bottom: 5px;
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 0.3s;
+            text-align: left;
+        }
+
+        .location-nav .nav-link.active {
+            background-color: #212020 !important;
+            color: #dfc0a4 !important;
+            border-color: #212020;
+        }
+
+        .hotel-card {
+            border: 1px solid #3d3d3d;
+            background: #2a2a2a;
+            color: #e0e0e0;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f4f4f4;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212020">
+        <div class="container">
+            <a class="navbar-brand fs-3 custom-font" style="color: #dfc0a4;" href="index.html">
+                <img src="travelllogo.png" alt="Logo" style="width:60px; margin-right: 15px;" class="rounded-pill">
+                Roamers, Venture & Co.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="liabilitywaver.html">Liability Waiver</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="survivalblog.html">Survival Blog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="aboutncontact.html">About & Contact</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link px-3" href="#" data-bs-toggle="modal"
+                            data-bs-target="#logIn">Login</a></li>
+                    <li class="nav-item ms-2"><a class="nav-link px-4" href="#" data-bs-toggle="modal"
+                            data-bs-target="#signUp">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 custom-font">BRIEFING</h1>
+            <p class="lead mono-font text-uppercase">Operational Area Intelligence & Logistics</p>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="row mb-4">
+            <div class="col-12 border-start border-4 border-dark ps-3">
+                <h2 class="custom-font display-6">VENTURE BRIEFING: SITE SELECTION</h2>
+                <p class="mono-font text-muted">Initialize data downlink for priority operational theaters.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="nav flex-column nav-pills location-nav" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="nav-link active" id="danakil-tab" data-bs-toggle="pill" data-bs-target="#danakil"
+                        type="button" role="tab">Danakil Depression</button>
+                    <button class="nav-link" id="nyiragongo-tab" data-bs-toggle="pill" data-bs-target="#nyiragongo"
+                        type="button" role="tab">Mount Nyiragongo</button>
+                    <button class="nav-link" id="snake-island-tab" data-bs-toggle="pill" data-bs-target="#snake-island"
+                        type="button" role="tab">Snake Island</button>
+                </div>
+                <div class="mt-4 p-3 bg-dark text-warning mono-font small rounded shadow-sm">
+                    <strong>SYSTEM STATUS:</strong> Uplink Secure<br>
+                    <strong>LAST SYNC:</strong> 04.01.2026
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <div class="tab-pane fade show active" id="danakil" role="tabpanel">
+                        <div class="card border-0 shadow-sm p-4 h-100">
+                            <h3 class="custom-font">DANAKIL DEPRESSION</h3>
+                            <p class="mono-font text-muted mb-3">COORDS: 14.2350° N, 40.3000° E</p>
+                            <p>A hydrothermal wasteland. Operatives must utilize Hamedela base camp (expedition tents).
+                                Ground temperatures exceeding 50°C expected.</p>
+
+                            <h6 class="mono-font fw-bold mt-4">LOCAL RECONNAISSANCE (LODGING):</h6>
+                            <div class="hotel-card">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold">Kuriftu Resort & Spa (Semera)</span>
+                                    <span class="text-success small">NEAREST HUB</span>
+                                </div>
+                                <p class="small mb-0 opacity-75">Last point of comfort before entering the depression.
+                                    AC and pool for thermal regulation.</p>
+                            </div>
+                            <div class="hotel-card">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold">Hamedela Expedition Camp</span>
+                                    <span class="text-danger small">FIELD BASE</span>
+                                </div>
+                                <p class="small mb-0 opacity-75">Basic open-air cots. High-exposure area. Requires
+                                    security detail.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nyiragongo" role="tabpanel">
+                        <div class="card border-0 shadow-sm p-4 h-100">
+                            <h3 class="custom-font">MOUNT NYIRAGONGO</h3>
+                            <p class="mono-font text-muted mb-3">COORDS: 1.5231° S, 29.2486° E</p>
+                            <p>Home to the world's largest lava lake. Summit Shelters available at the crater rim. High
+                                altitude combined with volcanic gases.</p>
+
+                            <h6 class="mono-font fw-bold mt-4">LOCAL RECONNAISSANCE (LODGING):</h6>
+                            <div class="hotel-card">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold">Mikeno Lodge (Virunga)</span>
+                                    <span class="text-success small">STAGING POINT</span>
+                                </div>
+                                <p class="small mb-0 opacity-75">Bungalows at park HQ. High-level security and expert
+                                    trekking guides.</p>
+                            </div>
+                            <div class="hotel-card">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold">Crater Rim Huts</span>
+                                    <span class="text-warning small">SUMMIT</span>
+                                </div>
+                                <p class="small mb-0 opacity-75">Basic A-frame shelters. Extreme exposure to SO2 fumes.
+                                    No running water.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="snake-island" role="tabpanel">
+                        <div class="card border-0 shadow-sm p-4 h-100">
+                            <h3 class="custom-font">SNAKE ISLAND</h3>
+                            <p class="mono-font text-secondary mb-3">COORDS: 24.4854° S, 46.6749° W</p>
+                            <p>Habitat of the Golden Lancehead. Strictly boat-based lodging. No landing permitted
+                                without Navy escort. Public access is forbidden, so technically this is illegal.</p>
+
+                            <h6 class="mono-font fw-bold mt-4">LOCAL RECONNAISSANCE (LODGING):
+                            </h6>
+                            <div class="hotel-card border-secondary">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold">Vessel-Based Quarters</span>
+                                    <span class="text-info small">MOBILE BASE</span>
+                                </div>
+                                <p class="small mb-0 opacity-75">Live-aboard research vessels anchored 2km offshore.
+                                    Only safe sleeping zone.</p>
+                            </div>
+                            <div class="hotel-card border-secondary">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold">Itanhaém Coastal Hub</span>
+                                    <span class="text-success small">MAINLAND</span>
+                                </div>
+                                <p class="small mb-0 opacity-75">Standard logistics staging point. 35km from extraction
+                                    site.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 p-4 bg-dark text-white rounded shadow">
+            <h4 class="custom-font text-center mb-4" style="color: #dfc0a4;">OPERATIONAL ENVIRONMENT SPECS</h4>
+            <div class="table-responsive">
+                <table class="table table-dark table-sm mono-font small align-middle">
+                    <thead>
+                        <tr style="color: #dfc0a4;">
+                            <th>LOCATION</th>
+                            <th>TERRAIN TYPE</th>
+                            <th>THERMAL RANGE</th>
+                            <th>HAZARD RATING</th>
+                            <th>REQUIRED GEAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The Outpost</td>
+                            <td>Glacial / Alpine</td>
+                            <td>-40°C to -10°C</td>
+                            <td class="risk-high">EXTREME</td>
+                            <td>Grade 4 Thermal, O2 Tanks</td>
+                        </tr>
+                        <tr>
+                            <td>Sector 7</td>
+                            <td>Dense Urban</td>
+                            <td>10°C to 25°C</td>
+                            <td class="risk-med">MODERATE</td>
+                            <td>Signal Jammer, Low-Vis Clothing</td>
+                        </tr>
+                        <tr>
+                            <td>Rally Point: Zion</td>
+                            <td>Arid / Volcanic</td>
+                            <td>35°C to 50°C</td>
+                            <td class="risk-high">EXTREME</td>
+                            <td>Sulfur Filters, Hydration Salts</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-5 p-4 border border-dark rounded bg-white">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="custom-font m-0">SHARED OCCUPANCY REGISTRY</h4>
+                <button class="btn btn-outline-dark btn-sm mono-font">POST AVAILABILITY</button>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-dark mono-font">
+                        <tr>
+                            <th scope="col">OPERATIVE ID</th>
+                            <th scope="col">TARGET SITE</th>
+                            <th scope="col">DATES</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody class="mono-font small">
+                        <tr>
+                            <td><strong>AungPyaeThaw</strong></td>
+                            <td>Mikeno Lodge (Virunga)</td>
+                            <td>Apr 12 - Apr 15</td>
+                            <td><span class="text-primary fw-bold">1 SLOT OPEN</span></td>
+                            <td><button class="btn btn-sm btn-outline-primary py-0">COORDINATE</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>YorPhoneLinging</strong></td>
+                            <td>Itanhaém Coastal Hub</td>
+                            <td>Apr 10 - Apr 11</td>
+                            <td><span class="text-primary fw-bold">2 SLOTS OPEN</span></td>
+                            <td><button class="btn btn-sm btn-outline-primary py-0">COORDINATE</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-center text-lg-start mt-5" style="background-color: #212020">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h5>Roamers, Venture & Co.</h5>
+                    <p>Exploring the extremes of the physical world since 2020. Travel at your own risk.</p>
+                </div>
+                <div class="col-lg-6 mb-4 text-lg-end">
+                    <h5>Legal & Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="liabilitywaver.html" style="color: #9b9a9a; text-decoration: none;">Liability
+                                Waiver</a></li>
+                        <li><a href="aboutncontact.html#contact"
+                                style="color: #9b9a9a; text-decoration: none;">Satellite Uplink</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: #2e2d2d;">
+            © 2026 Roamers, Venture & Co. | All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
